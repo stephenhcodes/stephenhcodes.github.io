@@ -16,7 +16,8 @@ h3 {
     color: #34495e;
 }
 
-.footer .fa-twitter {
+.footer .fa-twitter,
+.footer .fa-github {
     font-size: 1.2rem;
     vertical-align: middle;
 }
@@ -68,7 +69,8 @@ h3 {
 .splash-container {
     background-color: #16a085;
     z-index: 1;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: scroll;
     width: 100%;
     height: 100vh;
     top: 0;
@@ -81,20 +83,23 @@ h3 {
     height: 50%;
     margin: auto;
     position: absolute;
-    top: 100px; left: 0; bottom: 0; right: 0;
+    top: 5px; left: 0; bottom: 0; right: 0;
     text-align: center;
     text-transform: uppercase;
 }
 
 .splash-head {
-    font-size: 20px;
-    font-weight: bold;
-    color: #fff;
     border: 3px solid #fff;
     padding: 1em 1.6em;
     font-weight: 100;
     border-radius: 5px;
     line-height: 1em;
+}
+
+.splash-head h1 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
 }
 
 .splash-subhead {
@@ -114,7 +119,7 @@ h3 {
     padding: 1rem 3.5rem;
     overflow: hidden;
     transition: 1s all ease;
-    width: 15rem;
+    width: 13.5rem;
 }
 
 .btn-cta::before{
@@ -143,6 +148,28 @@ h3 {
     width: 1.8rem;
 }
 
+.LI-footer {
+    text-align: left;
+}
+
+.LI-profile-badge {
+    display: block;
+    height: 20rem;
+}
+
+.LI-badge-container.horizontal.dark .LI-name-container {
+    display: inline-block !important;
+}
+
+.LI-name,
+.LI-more-info {
+    display: none !important;
+}
+
+.LI-badge-container {
+    height: 9rem !important;
+}
+
 @media (min-width: 48em) {
     body {
         font-size: 16px;
@@ -157,14 +184,14 @@ h3 {
         height: 50%;
     }
 
-    .splash-head {
+    .splash-head h1 {
         font-size: 250%;
     }
 
 }
 
 @media (min-width: 78em) {
-    .splash-head {
+    .splash-head h1 {
         font-size: 300%;
     }
 }
